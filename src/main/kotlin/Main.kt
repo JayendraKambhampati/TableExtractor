@@ -8,7 +8,7 @@ import java.io.File
 fun main(args: Array<String>) {
 
     try{
-        val pathname = "Sample.pdf"
+        val pathname = "schools.pdf"
         val pd = PDDocument.load(File(pathname))
         val totalPages = pd.numberOfPages
         println("Total Pages in Document: $totalPages")
@@ -24,17 +24,20 @@ fun main(args: Array<String>) {
         for(i in 1 .. count){
             val page = oe.extract(i)
             val table = sea.extract(page)
-            println("Table $i: \n")
+            var tables_count = 0
+            //println("Table $i: \n")
             for (tables in table) {
                 val rows = tables.rows
                 for (i in rows.indices) {
                     val cells = rows[i]
                     for (j in cells.indices) {
-                        print(cells[j].getText() + "  |  ")
+                        //print(cells[j].getText() + "  |  ")
                     }
-                    println()
+                    //println()
                 }
+                tables_count++
             }
+            println("\nNumber of tables in page $i are $tables_count")
             println("\n\n\n")
         }
     }catch(ex:Exception){
