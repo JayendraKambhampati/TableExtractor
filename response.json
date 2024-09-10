@@ -1,0 +1,342 @@
+[
+    {
+        "projectId": "6c5e777e-74cc-44d4-85fe-e90a0725ed05",
+        "name": "Cory-Smoke-Test-1222",
+        "description": "Smoke test 12-22\n\nUpdated on December 13, 2023.",
+        "hcpApplicationId": "AIDE_0074310",
+        "hcpResourceGroupName": "migration-aide-0074310-4416a57",
+        "hcpResourceId": "migration-aide-0074310-4416a57/uais.project.v1/uaisprj.6c5e777e-74cc-44d4-85fe-e90a0725ed05",
+        "adminADGroup": null,
+        "contributorADGroup": {
+            "groupName": "AZU_Apollo_E2E_Test",
+            "groupId": "25ea42b1-ab08-4a02-9783-108c819df0b4"
+        },
+        "dataSubscription": {
+            "actorId": "6af1bf30-c92d-4288-9cb0-b13184142168",
+            "dataAccessFeatures": [
+                "ACCESS_PANACEA_DATA"
+            ],
+            "lifeCycleInfo": {
+                "created": {
+                    "eventTime": "2023-08-10T09:53:08.40305743Z",
+                    "actor": "d3ac3934-54ef-466c-b90c-fbfb7d1c0a31",
+                    "msId": "skaredi"
+                },
+                "updated": {
+                    "eventTime": "2023-08-10T09:53:15.367304553Z",
+                    "actor": "d9a67b4a-26fb-476b-b50b-c62e2f4ac8c5"
+                },
+                "lifeCycleEventStatus": "ACTIVE",
+                "statusReason": "CreateNandiSubscriptionFunction - complete",
+                "progress": {
+                    "completedSteps": 3,
+                    "totalSteps": 3
+                }
+            }
+        },
+        "computeContainer": {
+            "apolloWorkspaceId": "2236",
+            "computeWorkspaces": [
+                {
+                    "id": "85b7f021-0a64-4f07-a6ea-b565a39f16e5",
+                    "apolloComputeId": "",
+                    "computeWorkspaceType": "AZURE_ML",
+                    "url": "https://ml.azure.com/?wsid=/subscriptions/d7965193-f5a8-4550-b11d-bd1f52d83247/resourcegroups/isuexjdz85yi1rq-common/providers/Microsoft.MachineLearningServices/workspaces/isuexjdz85yi1rq-aml",
+                    "lifeCycleModel": {
+                        "lifeCycleEventStatus": "ACTIVE"
+                    }
+                },
+                {
+                    "id": "f6aff384-c140-4239-ae04-eb27c11545da",
+                    "apolloComputeId": "",
+                    "computeWorkspaceType": "DATABRICKS",
+                    "url": "https://adb-8761003737802649.9.azuredatabricks.net",
+                    "lifeCycleModel": {
+                        "lifeCycleEventStatus": "ACTIVE"
+                    }
+                }
+            ],
+            "apolloSubscriptionId": "234",
+            "lifeCycleInfo": {
+                "lifeCycleEventStatus": "ACTIVE"
+            }
+        },
+        "cognitiveServiceContainer": null,
+        "lifeCycleInfo": {
+            "updated": {
+                "eventTime": "2024-05-07T19:27:28.6030603Z",
+                "actor": "d9a67b4a-26fb-476b-b50b-c62e2f4ac8c5"
+            },
+            "lifeCycleEventStatus": "ACTIVE",
+            "statusReason": "PRM Resource created or updated successfully",
+            "progress": {
+                "completedSteps": 1,
+                "totalSteps": 2
+            }
+        },
+        "ruai": null,
+        "projectType": "V2",
+        "workflowServiceContainer": null,
+        "forceIsVisibleInSearch": null
+    },
+    {
+        "projectId": "e895a778-2a2b-4055-a4ec-6c0490fcb30f",
+        "name": "AkhilTest1",
+        "description": "test",
+        "hcpApplicationId": "AIDE_0074310",
+        "hcpResourceGroupName": "migration-aide-0074310-4416a57",
+        "hcpResourceId": "migration-aide-0074310-4416a57/uais.project.v1/uaisprj.e895a778-2a2b-4055-a4ec-6c0490fcb30f",
+        "adminADGroup": null,
+        "contributorADGroup": {
+            "groupName": "AZU_UnitedAIStudio_NonProd_Users",
+            "groupId": "a5c82ab7-b989-4589-81b4-451a9ad6791d"
+        },
+        "dataSubscription": {
+            "actorId": "b8e5b21e-9154-4a15-811f-9e3f84c375ef",
+            "dataAccessFeatures": [
+                "ACCESS_PANACEA_DATA"
+            ],
+            "lifeCycleInfo": {
+                "created": {
+                    "eventTime": "2023-05-17T04:52:18.447594138Z",
+                    "actor": "34de30de-759f-459e-84ee-dd8ccc7bb465",
+                    "msId": "vadinar2"
+                },
+                "updated": {
+                    "eventTime": "2023-05-17T04:52:44.615018836Z",
+                    "actor": "d9a67b4a-26fb-476b-b50b-c62e2f4ac8c5"
+                },
+                "lifeCycleEventStatus": "ACTIVE",
+                "statusReason": "CreateNandiSubscriptionFunction - complete",
+                "progress": {
+                    "completedSteps": 3,
+                    "totalSteps": 3
+                }
+            }
+        },
+        "computeContainer": {
+            "apolloWorkspaceId": "2237",
+            "computeWorkspaces": [
+                {
+                    "id": "06c38181-2496-44ec-821f-4abf7fca2e63",
+                    "apolloComputeId": "",
+                    "computeWorkspaceType": "AZURE_ML",
+                    "url": "https://ml.azure.com/?wsid=/subscriptions/d7965193-f5a8-4550-b11d-bd1f52d83247/resourcegroups/dxc0wjvcdqtocku-common/providers/Microsoft.MachineLearningServices/workspaces/dxc0wjvcdqtocku-aml",
+                    "lifeCycleModel": {
+                        "lifeCycleEventStatus": "ACTIVE"
+                    }
+                },
+                {
+                    "id": "7e340a43-2272-4e49-9fab-8ab9be1b5fbe",
+                    "apolloComputeId": "",
+                    "computeWorkspaceType": "DATABRICKS",
+                    "url": "https://adb-1158644671369289.9.azuredatabricks.net",
+                    "lifeCycleModel": {
+                        "lifeCycleEventStatus": "ACTIVE"
+                    }
+                }
+            ],
+            "apolloSubscriptionId": "234",
+            "lifeCycleInfo": {
+                "lifeCycleEventStatus": "ACTIVE"
+            }
+        },
+        "cognitiveServiceContainer": {
+            "cognitiveServices": [
+                {
+                    "id": "c006239f-c5b4-493f-9be0-d55f6e64ed7c",
+                    "cognitiveServiceId": "c006239f-c5b4-493f-9be0-d55f6e64ed7c",
+                    "cognitivePlatformType": "AzureDocumentIntelligence",
+                    "applications": [
+                        {
+                            "appId": "test-01",
+                            "roles": [
+                                "Cognitive Services User"
+                            ]
+                        }
+                    ],
+                    "lifeCycleInfo": {
+                        "created": {
+                            "eventTime": "2024-07-30T07:46:18.629283232Z",
+                            "actor": "4c48b957-a1fa-4cc1-afd5-0ccb6502f871",
+                            "msId": "spriya48"
+                        },
+                        "lifeCycleEventStatus": "ERROR"
+                    }
+                },
+                {
+                    "id": "0270c5ce-ec00-4e6c-89c8-bcc818b9020c",
+                    "cognitiveServiceId": "0270c5ce-ec00-4e6c-89c8-bcc818b9020c",
+                    "cognitivePlatformType": "AzureSearchService",
+                    "applications": [
+                        {
+                            "appId": "ramya-test-01",
+                            "roles": [
+                                "Search Index Data Reader"
+                            ]
+                        }
+                    ],
+                    "lifeCycleInfo": {
+                        "created": {
+                            "eventTime": "2024-07-30T07:52:18.262646011Z",
+                            "actor": "4c48b957-a1fa-4cc1-afd5-0ccb6502f871",
+                            "msId": "spriya48"
+                        },
+                        "lifeCycleEventStatus": "ERROR"
+                    }
+                }
+            ],
+            "lifeCycleInfo": {
+                "created": {
+                    "eventTime": "2024-07-30T07:46:18.668954391Z",
+                    "actor": "4c48b957-a1fa-4cc1-afd5-0ccb6502f871",
+                    "msId": "spriya48"
+                },
+                "updated": {
+                    "eventTime": "2024-07-30T07:52:18.26281534Z",
+                    "actor": "4c48b957-a1fa-4cc1-afd5-0ccb6502f871",
+                    "msId": "spriya48"
+                },
+                "lifeCycleEventStatus": "ACTIVE"
+            }
+        },
+        "lifeCycleInfo": {
+            "updated": {
+                "eventTime": "2024-07-30T07:58:31.012770279Z",
+                "actor": "da68616a-251b-4756-b8b4-12369f587f8c"
+            },
+            "lifeCycleEventStatus": "ACTIVE",
+            "statusReason": "PRM Resource created or updated successfully",
+            "progress": {
+                "completedSteps": 1,
+                "totalSteps": 2
+            }
+        },
+        "ruai": null,
+        "projectType": "V2",
+        "workflowServiceContainer": null,
+        "forceIsVisibleInSearch": null
+    },
+    {
+        "projectId": "c97a00d3-d629-4dae-b806-687e173bf77f",
+        "name": "AkhilTest2",
+        "description": "test",
+        "hcpApplicationId": "AIDE_0074310",
+        "hcpResourceGroupName": "migration-aide-0074310-4416a57",
+        "hcpResourceId": "migration-aide-0074310-4416a57/uais.project.v1/uaisprj.c97a00d3-d629-4dae-b806-687e173bf77f",
+        "adminADGroup": null,
+        "contributorADGroup": {
+            "groupName": "AZU_UnitedAIStudio_NonProd_Users",
+            "groupId": "a5c82ab7-b989-4589-81b4-451a9ad6791d"
+        },
+        "dataSubscription": {
+            "actorId": "49ef1aa3-1d1b-4428-9c8b-46fa26825c79",
+            "dataAccessFeatures": []
+        },
+        "computeContainer": {
+            "apolloWorkspaceId": "2238",
+            "computeWorkspaces": [
+                {
+                    "id": "40ee75f6-146f-4ab4-8ebc-aceee2a891c2",
+                    "apolloComputeId": "",
+                    "computeWorkspaceType": "AZURE_ML",
+                    "url": "https://ml.azure.com/?wsid=/subscriptions/d7965193-f5a8-4550-b11d-bd1f52d83247/resourcegroups/jko6pbluwhpzshq-common/providers/Microsoft.MachineLearningServices/workspaces/jko6pbluwhpzshq-aml",
+                    "lifeCycleModel": {
+                        "lifeCycleEventStatus": "ACTIVE"
+                    }
+                },
+                {
+                    "id": "9dcaf4be-a634-42c8-b9f2-53dee89b1c7c",
+                    "apolloComputeId": "",
+                    "computeWorkspaceType": "DATABRICKS",
+                    "url": "https://adb-5330719451743511.11.azuredatabricks.net",
+                    "lifeCycleModel": {
+                        "lifeCycleEventStatus": "ACTIVE"
+                    }
+                }
+            ],
+            "apolloSubscriptionId": "234",
+            "lifeCycleInfo": {
+                "lifeCycleEventStatus": "ACTIVE"
+            }
+        },
+        "cognitiveServiceContainer": null,
+        "lifeCycleInfo": {
+            "updated": {
+                "eventTime": "2024-05-07T19:29:39.434630686Z",
+                "actor": "d9a67b4a-26fb-476b-b50b-c62e2f4ac8c5"
+            },
+            "lifeCycleEventStatus": "ACTIVE",
+            "statusReason": "PRM Resource created or updated successfully",
+            "progress": {
+                "completedSteps": 1,
+                "totalSteps": 2
+            }
+        },
+        "ruai": null,
+        "projectType": "V2",
+        "workflowServiceContainer": null,
+        "forceIsVisibleInSearch": null
+    },
+    {
+        "projectId": "9cebfedf-d9d6-4731-b7e3-5381f342c1ee",
+        "name": "AkhilTest3",
+        "description": "test",
+        "hcpApplicationId": "AIDE_0074310",
+        "hcpResourceGroupName": "migration-aide-0074310-4416a57",
+        "hcpResourceId": "migration-aide-0074310-4416a57/uais.project.v1/uaisprj.9cebfedf-d9d6-4731-b7e3-5381f342c1ee",
+        "adminADGroup": null,
+        "contributorADGroup": {
+            "groupName": "AZU_UnitedAIStudio_NonProd_Users",
+            "groupId": "a5c82ab7-b989-4589-81b4-451a9ad6791d"
+        },
+        "dataSubscription": {
+            "actorId": "4e610991-bf70-4e08-9f58-95fa3e09a15c",
+            "dataAccessFeatures": []
+        },
+        "computeContainer": {
+            "apolloWorkspaceId": "2239",
+            "computeWorkspaces": [
+                {
+                    "id": "6271735e-b52d-4263-aeb9-cd5f345025ea",
+                    "apolloComputeId": "",
+                    "computeWorkspaceType": "AZURE_ML",
+                    "url": "https://ml.azure.com/?wsid=/subscriptions/d7965193-f5a8-4550-b11d-bd1f52d83247/resourcegroups/zoqazb9lvuax7hx-common/providers/Microsoft.MachineLearningServices/workspaces/zoqazb9lvuax7hx-aml",
+                    "lifeCycleModel": {
+                        "lifeCycleEventStatus": "ACTIVE"
+                    }
+                },
+                {
+                    "id": "53d3f432-8b71-4776-a006-7ee38ab94b0c",
+                    "apolloComputeId": "",
+                    "computeWorkspaceType": "DATABRICKS",
+                    "url": "https://adb-4582051021039432.12.azuredatabricks.net",
+                    "lifeCycleModel": {
+                        "lifeCycleEventStatus": "ACTIVE"
+                    }
+                }
+            ],
+            "apolloSubscriptionId": "234",
+            "lifeCycleInfo": {
+                "lifeCycleEventStatus": "ACTIVE"
+            }
+        },
+        "cognitiveServiceContainer": null,
+        "lifeCycleInfo": {
+            "updated": {
+                "eventTime": "2024-05-07T19:29:40.303302418Z",
+                "actor": "d9a67b4a-26fb-476b-b50b-c62e2f4ac8c5"
+            },
+            "lifeCycleEventStatus": "ACTIVE",
+            "statusReason": "PRM Resource created or updated successfully",
+            "progress": {
+                "completedSteps": 1,
+                "totalSteps": 2
+            }
+        },
+        "ruai": null,
+        "projectType": "V2",
+        "workflowServiceContainer": null,
+        "forceIsVisibleInSearch": null
+    }
+]
