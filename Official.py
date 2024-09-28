@@ -2,6 +2,7 @@ from azure.identity import DeviceCodeCredential
 import requests
 import json
 import csv
+import time
 # Azure credentials
 tenant_id = "db05faca-c82a-4b9d-b9c5-0f64b6755421"
 client_id = "6d914498-1868-429d-84ec-c2f0f5517878"
@@ -13,7 +14,7 @@ def create_payload(subscription_id):
     return json.dumps({
         "ref": "main",
         "inputs": {
-            "version": "v1.0.50",
+            "version": "main",
             "subscription-id": subscription_id,
             "run-apply": False  # Adjust based on your requirements
         }
@@ -65,6 +66,7 @@ response = requests.get(url, headers=headers)
 
 # Check if the request was successful
 
+
 if response.status_code == 200:
     # Parse the JSON response
     data = response.json()
@@ -82,18 +84,28 @@ if response.status_code == 200:
         for sub_id in subscription_ids:
             writer.writerow([sub_id])
     print("Filtered azureSubscriptionIds have been saved to Output.csv")
+    batch_size = 2
+    wait_time_seconds = 30
 
-    # Trigger GitHub Actions for each filtered subscription
+    for i in range(0, len(subscription_ids), batch_size):
 
-    for sub_id in subscription_ids:
-        # Create the payload
-        payload = create_payload(sub_id)
-        # Send the POST request to GitHub Actions
-        github_response = requests.post(github_url, headers=github_headers, data=payload)
-        # Print response for debugging
-        print(f"Triggered GitHub Action for Subscription ID: {sub_id}")
-        print(f"GitHub Response: {github_response.status_code}, {github_response.text}")
-else:
-    print(f"Failed to fetch data. Status code: {response.status_code}")
-    print(response.text)
+        batch = subscription_ids[i:i + batch_size]
+        print(f"Processing batch {i // batch_size + 1}: {batch}")
+        for sub_id in batch:
+           # Create the payload for each subscription ID
+            payload = create_payload(sub_id)
+           # Send the POST request to GitHub Actions
+            github_response = requests.post(github_url, headers=github_headers, data=payload)
+           # Print response for debugging
+            print(f"Triggered GitHub Action for Subscription ID: {sub_id}")
+            print(f"GitHub Response: {github_response.status_code}, {github_response.text}")
+       # Wait before moving to the next batch
+        if i + batch_size < len(subscription_ids):
+
+            print(f"Waiting for {wait_time_seconds} seconds before processing the next batch...")
+            time.sleep(wait_time_seconds)
+            print("All batches processed.")
+        else:
+            print(f"Failed to fetch data. Status code: {response.status_code}")
+            print(response.text)
  
